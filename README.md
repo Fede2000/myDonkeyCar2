@@ -1,3 +1,8 @@
+
+git clone https://github.com/Fede2000/myDonkeyCar2.git
+cd myDonkeyCar2/
+pip install -e
+
 # donkeycar: a python self driving library
 
 [![Build Status](https://travis-ci.org/autorope/donkeycar.svg?branch=dev)](https://travis-ci.org/autorope/donkeycar)
