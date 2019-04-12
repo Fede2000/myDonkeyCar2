@@ -29,7 +29,7 @@ from donkeycar.parts.keras import KerasLinear
 from donkeycar.parts.transform import Lambda
 
 
-def drive(cfg, model_path=None, use_joystick=False):
+def drive(cfg, model_path=None, use_chaos=False):
     #Initialized car
     V = dk.vehicle.Vehicle()
 
