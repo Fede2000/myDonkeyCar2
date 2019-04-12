@@ -124,7 +124,7 @@ def train(cfg, tub_names, new_model_path, base_model_path=None):
 
     kl = KerasLinear()
 
-   if base_model_path is not None:
+    if base_model_path is not None:
         base_model_path = os.path.expanduser(base_model_path)
         kl.load(base_model_path)
 
@@ -144,10 +144,10 @@ def train(cfg, tub_names, new_model_path, base_model_path=None):
     print('steps_per_epoch', steps_per_epoch)
 
     kl.train(train_gen,
-             val_gen,
-             saved_model_path=new_model_path,
-             steps=steps_per_epoch,
-             train_split=cfg.TRAIN_TEST_SPLIT)
+            val_gen,
+            saved_model_path=new_model_path,
+            steps=steps_per_epoch,
+            train_split=cfg.TRAIN_TEST_SPLIT)
 
 if __name__ == '__main__':
     args = docopt(__doc__)
