@@ -3,12 +3,12 @@ actuators.py
 Classes to control the motors and servos. These classes
 are wrapped in a mixer class before being used in the drive loop.
 """
+from __future__ import division
 
 import time
 import donkeycar as dk
 
 import RPi.GPIO as io
-from __future__ import division
 from math import floor
 
 
