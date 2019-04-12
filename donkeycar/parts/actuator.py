@@ -208,7 +208,7 @@ class L298N:
             right_pulse = floor(straight_pulse * (1-angle))
 
         # debugging
-        print("angle {0:>+4.2f} | throttle {1:>+4.2f} | L pulse {2:>4d} | R pulse {3:>4d}".format(angle, throttle, left_pulse, right_pulse))
+        #print("angle {0:>+4.2f} | throttle {1:>+4.2f} | L pulse {2:>4d} | R pulse {3:>4d}".format(angle, throttle, left_pulse, right_pulse))
         self.controller_left.set_pulse(left_pulse)
         self.controller_right.set_pulse(right_pulse)
 
